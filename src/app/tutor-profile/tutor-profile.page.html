@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Tutor</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" id="container">
+  <ion-text> </ion-text>
+  <ion-list *ngIf="isLoaded">
+    <ion-item>
+      <ion-label >Nombres:</ion-label>
+      <ion-label class="datos">{{result.profesor.nombres}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Apellidos:</ion-label>
+      <ion-label class="datos">{{result.profesor.apellidos}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email:</ion-label>
+      <ion-label class="datos">{{result.profesor.correoInstitucional}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Banner:</ion-label>
+      <ion-label class="datos">{{result.profesor.codigo}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>E-Personal:</ion-label>
+      <ion-label class="datos">{{result.profesor.correoPersonal}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Carrera:</ion-label>
+      <ion-label class="datos">{{result.profesor.carrera}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Telefono:</ion-label>
+      <ion-label class="datos">{{result.profesor.telefono}}</ion-label>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>

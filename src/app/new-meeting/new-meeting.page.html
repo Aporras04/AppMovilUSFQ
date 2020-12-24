@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nueva Reunion</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form *ngIf="isLoaded" action="">
+    <ion-item>
+      <ion-label position="floating">Tema:</ion-label>
+      <ion-textarea [(ngModel)]="tema" name="tema"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Descripcion:</ion-label>
+      <ion-textarea [(ngModel)]="descripcion" name="descripcion"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Fecha:</ion-label>
+      <ion-datetime [(ngModel)]="fecha" name="fecha" displayFormat="D MMM YYYY H:mm"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Estudiante:</ion-label>
+      <ion-select [(ngModel)]="estudiante" placeholder="Select One" name="estudiante">
+        <ion-select-option *ngFor="let student of students" value="{{student.id}}">{{student.nombres}} {{student.apellidos}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-button expand="block" id="btn-inicio" color="dark" (click)="crearReunion()">Crear</ion-button>
+  </form>
+</ion-content>

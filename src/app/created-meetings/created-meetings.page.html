@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nuevas Reuniones</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-list *ngIf="isLoaded">
+    <ion-item *ngFor='let result of data'> 
+      <ion-avatar>
+        <ion-img src="assets/img/reunion.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h3>{{result.tema}}</h3>
+        <p>{{result.nombresProfesor}} {{result.apellidosProfesor}}</p>
+        <p>{{result.nombresEstudiante}} {{result.apellidosEstudiante}}</p>
+        <p>{{result.fecha | date:"dd MMM y HH:mm"}}</p>
+      </ion-label>
+      <ion-button (click)="updateMeetingStatus(true, result.id)">
+        <ion-icon slot="icon-only" name="checkmark-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="updateMeetingStatus(false, result.id)">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content> 

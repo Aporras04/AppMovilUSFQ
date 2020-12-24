@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Estudiantes Condicionados</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="isLoaded">
+    <ion-item  *ngFor='let r of condicionados'>
+      <ion-icon name="person-circle-outline" ></ion-icon>
+      <ion-label>
+        <h3>{{r.nombres}} {{r.apellidos}}</h3>
+        <p>{{r.codigo}}</p>
+        <p>{{r.gpa}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

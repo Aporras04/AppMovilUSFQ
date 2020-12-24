@@ -1,0 +1,14 @@
+<ion-content [fullscreen]="true" id="container">
+  <div id="container1">
+    <ion-img src="assets/img/logo.jpg" id="logo-imagen"></ion-img>
+    <ion-text>
+      <h1>Registrate</h1>
+    </ion-text>
+  </div>
+  
+  <div id="container2">
+    <ion-label color="white" stacked>Correo electronico</ion-label>
+    <ion-input [(ngModel)]="email" name="email" type="email"></ion-input>
+  </div>
+  <ion-button expand="block" id="btn-inicio" color="dark" (click)="sendMail()">Continuar</ion-button> 
+</ion-content>

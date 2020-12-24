@@ -1,0 +1,32 @@
+#container {
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 3%;
+  }
+
+  ion-list{
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5%;
+  }
+
+  ion-textarea{
+    margin-top: 8%;
+  }
+
+  #btn-inicio{
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .datos{
+    position: absolute;
+    margin-left: 29%;
+}

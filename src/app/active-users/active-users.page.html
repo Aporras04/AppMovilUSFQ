@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Usuarios Activos</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="isLoaded">
+    <ion-item  *ngFor='let r of data'>
+      <ion-icon name="person-circle-outline" ></ion-icon>
+      <ion-label>
+        <h3>{{r.nombres}} {{r.apellidos}}</h3>
+        <p>{{r.codigo}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

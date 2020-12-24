@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista Reuniones</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="isLoaded">
+
+
+  <ion-list>
+    <ion-item-divider>
+      <ion-label>
+        Aceptadas
+      </ion-label>
+    </ion-item-divider>
+    <ion-item *ngFor='let result of data' (click)="goToMeeting(result.id)">
+      <ion-avatar>
+        <ion-img src="assets/img/reunion.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h3>{{result.tema}}</h3>
+        <p>{{result.nombresEstudiante}} {{result.apellidosEstudiante}}</p>
+        <p>{{result.fecha | date:"dd MMM y HH:mm"}}</p>
+      </ion-label>
+    </ion-item>
+    <ion-item-divider>
+      <ion-label>
+        Rechazadas
+      </ion-label>
+    </ion-item-divider>
+    <ion-item *ngFor='let result of reject' (click)="goToMeeting(result.id)">
+      <ion-avatar>
+        <ion-img src="assets/img/reunion.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h3>{{result.tema}}</h3>
+        <p>{{result.nombresEstudiante}} {{result.apellidosEstudiante}}</p>
+        <p>{{result.fecha}}</p>
+      </ion-label>
+    </ion-item>
+
+
+
+  </ion-list>
+
+
+</ion-content>

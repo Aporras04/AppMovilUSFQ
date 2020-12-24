@@ -1,0 +1,19 @@
+<ion-content [fullscreen]="true" id="container">
+  <div id="container1">
+    <ion-img src="assets/img/logo.jpg" id="logo-imagen"></ion-img>
+    <ion-text>
+      <h1>Contrasena Nueva</h1>
+    </ion-text>
+  </div>
+  
+  <div id="container2">
+    <ion-label color="white" stacked>Correo electronico</ion-label>
+    <ion-input [(ngModel)]="email" type="email" name="email"></ion-input>
+    <ion-label color="white" stacked>Contrasena</ion-label>
+    <ion-input [(ngModel)]="password" name = "password" type="password"></ion-input>
+    <ion-label color="white" stacked>Confirmar Contrasena</ion-label>
+    <ion-input [(ngModel)]="passwordConfirm" name = "passwordConfirm" type="password"></ion-input>
+  </div>
+  <ion-button expand="block" id="btn-inicio" color="dark" (click)="changePassword()">Continuar</ion-button> 
+</ion-content>
+

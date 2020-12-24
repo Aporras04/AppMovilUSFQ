@@ -1,0 +1,38 @@
+ion-title{
+    font-size: 20px;
+}
+
+ion-text{
+    font-size: 30px;
+}
+
+ion-img{
+    width: 50%;
+    height: 20%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#container {
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 3%;
+  }
+
+  ion-list{
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5%;
+  }
+
+  .datos{
+      position: absolute;
+      margin-left: 29%;
+  }

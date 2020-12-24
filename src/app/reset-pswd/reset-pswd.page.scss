@@ -1,0 +1,49 @@
+#container {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 13%;
+  }
+
+  #container1{
+  }
+  
+  #container2{
+    text-align: left;
+    position: relative;
+    justify-content: left;
+    align-items: left;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    ion-input{
+      border: solid 1px white !important;
+      border-radius: 10px;
+      margin-bottom: 5%;
+    }
+  
+    ion-label{
+      text-align: left;
+    }
+  }
+    
+  #logo-imagen{
+    width: 50% !important;
+    height: 50% !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px !important;
+    overflow: hidden;
+  }
+  
+  #btn-inicio{
+    margin-left: 15%;
+    margin-right: 15%;
+  }

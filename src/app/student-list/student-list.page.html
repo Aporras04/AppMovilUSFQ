@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista Estudiantes</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="isLoaded">
+    <ion-item  *ngFor='let r of resultado' (click)="goToStudent(r.id)">
+      <ion-icon name="person-circle-outline" ></ion-icon>
+      <ion-text>{{r.nombres}} {{r.apellidos}}</ion-text>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

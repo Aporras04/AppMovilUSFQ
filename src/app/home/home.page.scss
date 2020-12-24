@@ -1,0 +1,70 @@
+#container {
+  box-sizing: border-box;
+  text-align: center;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 13%;
+}
+
+#container1{
+  // margin-top: 20%;
+  ion-img{
+    width: 50% !important;
+    height: 50% !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px !important;
+    overflow: hidden;
+  }
+}
+
+#container2{
+  text-align: left;
+  position: relative;
+  justify-content: left;
+  align-items: left;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  ion-input{
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    margin-bottom: 5%;
+  }
+
+  ion-label{
+    text-align: left;
+  }
+}
+
+#container3{
+ margin-top: 5%;
+ a{
+  text-decoration: none;
+  color: white;
+ }
+}
+
+#container4{
+  margin-top: 5%;
+ a{
+  text-decoration: none;
+  color: white;
+ }
+}
+
+
+#btn-inicio{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+ion-input{
+  border: solid 1px white !important;
+}

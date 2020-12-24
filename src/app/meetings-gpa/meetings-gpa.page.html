@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Reuniones GPA</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-list *ngIf="isLoaded">
+    <ion-item-divider>
+      <ion-label>
+        GPA: 0
+      </ion-label>
+    </ion-item-divider>
+    <ion-item *ngFor='let result of GPA0'> 
+      <ion-avatar>
+        <ion-img src="assets/img/estudiante.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h3>{{result.nombres}} {{result.apellidos}}</h3>
+        <p>{{result.codigo}}</p>
+        <p>{{result.carrera}}</p>
+        <p>{{result.gpa}}</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item-divider>
+      <ion-label>
+        GPA: 1
+      </ion-label>
+    </ion-item-divider>
+    <ion-item *ngFor='let result of GPA1'> 
+      <ion-avatar>
+        <ion-img src="assets/img/estudiante.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h3>{{result.nombres}} {{result.apellidos}}</h3>
+        <p>{{result.codigo}}</p>
+        <p>{{result.carrera}}</p>
+        <p>{{result.gpa}}</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item-divider>
+      <ion-label>
+        GPA: 2
+      </ion-label>
+    </ion-item-divider>
+    <ion-item *ngFor='let result of GPA2'> 
+      <ion-avatar>
+        <ion-img src="assets/img/estudiante.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h3>{{result.nombres}} {{result.apellidos}}</h3>
+        <p>{{result.codigo}}</p>
+        <p>{{result.carrera}}</p>
+        <p>{{result.gpa}}</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item-divider>
+      <ion-label>
+        GPA: 3
+      </ion-label>
+    </ion-item-divider>
+    <ion-item *ngFor='let result of GPA3'> 
+      <ion-avatar>
+        <ion-img src="assets/img/estudiante.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h3>{{result.nombres}} {{result.apellidos}}</h3>
+        <p>{{result.codigo}}</p>
+        <p>{{result.carrera}}</p>
+        <p>{{result.gpa}}</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item-divider>
+      <ion-label>
+        GPA: 4
+      </ion-label>
+    </ion-item-divider>
+    <ion-item *ngFor='let result of GPA4'> 
+      <ion-avatar>
+        <ion-img src="assets/img/estudiante.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h3>{{result.nombres}} {{result.apellidos}}</h3>
+        <p>{{result.codigo}}</p>
+        <p>{{result.carrera}}</p>
+        <p>{{result.gpa}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content> 
